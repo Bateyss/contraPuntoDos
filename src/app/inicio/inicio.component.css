@@ -1,0 +1,142 @@
+.card-octamedia {
+    background-image: url('/assets/images/home/fondos/octamedia.png');
+}
+
+.card-proyectos {
+    background-image: url('/assets/images/home/fondos/proyectos.png');
+}
+
+.card-colaboradores {
+    background-image: url('/assets/images/home/fondos/colaboradores.png');
+}
+
+.card-contacto {
+    background-image: url('/assets/images/home/fondos/coctacto.png');
+}
+
+.plus-right {
+    display: block;
+    position: inherit;
+    text-align: end;
+    left: 100%;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.plus-left {
+    display: block;
+    position: inherit;
+    text-align: start;
+    left: 0%;
+}
+
+.plus-img {
+    color: aliceblue;
+    width: 90%;
+}
+
+.no-padding {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.side-outsite-bottom {
+    margin-bottom: -100%;
+}
+
+.side-outsite-left-1 {
+    margin-left: -60%;
+}
+
+.side-outsite-left-2 {
+    margin-left: -35%;
+}
+
+.side-outsite-left-3 {
+    margin-left: 0%;
+}
+
+.side-outsite-right-2 {
+    margin-left: 25%;
+}
+
+.side-outsite-right-1 {
+    margin-left: 50%;
+}
+
+.text-nat-center {
+    position: relative;
+    display: inline;
+    align-self: center;
+}
+
+.hovered {
+    transition: transform 0.5s
+}
+
+.hovered:hover {
+    transform: scale(1.5);
+}
+
+.text-absolute {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: #fff;
+    font-size: 350%;
+    animation: dis;
+}
+
+.text-absolute-1 {
+    position: absolute;
+    top: 40%;
+    left: -15%;
+    color: #fff;
+    font-size: 350%;
+}
+
+.text-absolute-2 {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    color: #fff;
+    font-size: 325%;
+}
+
+.visible-effect {
+    opacity: 0.05;
+    transition: opacity 0.5s linear;
+}
+
+.visible-effect:hover {
+    opacity: 1;
+}
+
+.card-title-text {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 400%;
+    font-weight: 500;
+}
+
+.card-title-text-2 {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+
+.text-cover-area {
+    width: 100%;
+    margin-top: 1em;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}

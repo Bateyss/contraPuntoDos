@@ -1,0 +1,29 @@
+.card-multimedia {
+    background-image: url('/assets/images/multimedia/fondos/fondoMultimedia.png');
+}
+
+.card-videos {
+    background-image: url('/assets/images/multimedia/fondos/fondoVideos.png');
+}
+
+.text-video {
+    width: 50%;
+    color: lightblue;
+    margin-top: 1em;
+    font-weight: 400;
+}
+
+::ng-deep youtube-player>iframe {
+    width: 100%;
+    border-radius: 25px;
+}
+
+::ng-deep youtube-player {
+    border-radius: 25px;
+}
+
+.video-info {
+    margin-top: -20px;
+    color: aliceblue;
+    z-index: 10;
+}
