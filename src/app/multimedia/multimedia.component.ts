@@ -4,7 +4,7 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 @Component({
   selector: 'app-multimedia',
   templateUrl: './multimedia.component.html',
-  styleUrls: ['./multimedia.component.css','./../inicio/inicio.component.css']
+  styleUrls: ['./multimedia.component.css','./../inicio/inicio.component.css','./../../assets/fonts/fontsadded.css']
 })
 export class MultimediaComponent implements OnInit {
 
@@ -20,7 +20,7 @@ export class MultimediaComponent implements OnInit {
   }
 
   moveBotton(duration?: number) {
-    this.animateScrollService.scrollToElement('inicioBottom', duration)
+    this.animateScrollService.scrollToElement('multimediaBottom', duration)
   }
 
 }  

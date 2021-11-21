@@ -86,27 +86,27 @@
 
 .text-absolute {
     position: absolute;
-    top: 40%;
-    left: 20%;
+    top: 45%;
+    left: 25%;
     color: #fff;
-    font-size: 350%;
+    font-size: 250%;
     animation: dis;
 }
 
 .text-absolute-1 {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: -15%;
     color: #fff;
-    font-size: 350%;
+    font-size: 250%;
 }
 
 .text-absolute-2 {
     position: absolute;
-    top: 40%;
-    left: 8%;
+    top: 45%;
+    left: 13%;
     color: #fff;
-    font-size: 325%;
+    font-size: 250%;
 }
 
 .visible-effect {
@@ -139,4 +139,12 @@
     border-radius: 10px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.select-categ {
+    font-size: x-large;
 }

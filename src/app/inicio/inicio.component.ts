@@ -6,7 +6,7 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  styleUrls: ['./inicio.component.css','./../../assets/fonts/fontsadded.css']
 })
 export class InicioComponent implements OnInit {
 

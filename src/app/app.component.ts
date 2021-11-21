@@ -5,7 +5,7 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css','./../assets/fonts/fontsadded.css']
 })
 export class AppComponent {
   title = 'contraPunto';

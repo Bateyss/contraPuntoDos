@@ -4,6 +4,7 @@
 
 .card-footer {
     background-color: #1c1c1c;
+    background-image: url('/assets/images/fondoFooter.png');
 }
 
 .nav-image-icon {
@@ -35,7 +36,10 @@
 .volver-text {
     text-transform: uppercase;
     color: aliceblue;
-    font-weight: 500;
     font-size: x-large;
     align-self: center;
+}
+
+.tab-linke {
+    min-width: 10%;
 }

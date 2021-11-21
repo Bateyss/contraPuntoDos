@@ -1,0 +1,78 @@
+.card-branding {
+    background-image: url('/assets/images/branding/fondo/brandig.png');
+}
+
+.card-spabass {
+    background-image: url('/assets/images/branding/fondo/spabass.png');
+}
+
+.card-alvarenga {
+    background-image: url('/assets/images/branding/fondo/alvarenga.png');
+}
+
+.card-bigbacon {
+    background-image: url('/assets/images/branding/fondo/bigbacon.png');
+}
+
+.trade-title {
+    color: white;
+    font-size: x-large;
+    text-align: start;
+}
+
+.trade-cliente {
+    color: white;
+    font-size: medium;
+    text-align: start;
+}
+
+.trade-cliente-name {
+    color: white;
+    font-size: large;
+    text-align: start;
+}
+
+.trade-cliente-logotype {
+    color: white;
+    font-size: small;
+    text-align: start;
+}
+
+.trade-description {
+    color: white;
+    text-align: start;
+}
+
+.trade-title-right {
+    color: white;
+    font-size: x-large;
+    text-align: end;
+}
+
+.trade-cliente-right {
+    color: white;
+    font-size: medium;
+    text-align: end;
+}
+
+.trade-cliente-name-right {
+    color: white;
+    font-size: large;
+    text-align: end;
+}
+
+.trade-cliente-logotype-right {
+    color: white;
+    font-size: small;
+    text-align: end;
+}
+
+.trade-description-right {
+    color: white;
+    text-align: end;
+}
+
+.display-block {
+    display: block;
+    text-align: end;
+}

@@ -16,7 +16,7 @@
           <img [src]="'assets/images/home/defHome.png'" class="nav-image-icon-mini nav-image" />
       </span>
         <div class="navbar-spacer"></div>
-        <lable class="text-light" mat-tab-link [style.opacity]="'1'" *ngFor="let link of links" (click)="drouter(link)" [active]="activeLink == link"> {{link}} </lable>
+        <lable class="text-light montserrat-extra-bold tab-linke" mat-tab-link [style.opacity]="'1'" *ngFor="let link of links" (click)="drouter(link)" [active]="activeLink == link"> {{link}} </lable>
     </nav>
 </div>
 
@@ -35,9 +35,9 @@
         <span>
           <img (click)="moveUp(1000)" [src]="'assets/images/cruces/flechaArriba.png'" class="nav-image-icon" />
       </span>
-        <label class="volver-text">Volver <br /> Arriba</label>
+        <label class="volver-text nexa-bold">Volver <br /> Arriba</label>
         <div class="navbar-spacer"></div>
-        <lable class="text-light" mat-tab-link [style.opacity]="'1'" *ngFor="let link of links" (click)="drouter(link)" [active]="activeLink == link"> {{link}} </lable>
+        <lable class="text-light montserrat-regular tab-linke" mat-tab-link [style.opacity]="'1'" *ngFor="let link of links" (click)="drouter(link)" [active]="activeLink == link"> {{link}} </lable>
     </nav>
     <div class="col-12">
         <div class="row">
