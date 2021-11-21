@@ -1,0 +1,14 @@
+.card-contacto-2 {
+    background-image: url('/assets/images/contacto/fondoFormulario.png');
+}
+
+.card-contacto-3 {
+    background-image: url('/assets/images/contacto/fondoContacto.png');
+}
+
+.contacto-mail {
+    align-self: center;
+    text-align: center;
+    display: block;
+    margin: 2em;
+}

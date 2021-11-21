@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgAnimateScrollService } from 'ng-animate-scroll';
 
@@ -7,7 +7,7 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css','./../assets/fonts/fontsadded.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'contraPunto';
   links = ['Inicio', 'Multimedia', 'Branding', 'Diseño Web', 'Contacto'];
   activeLink = this.links[0];
@@ -17,6 +17,11 @@ export class AppComponent {
     private animateScrollService: NgAnimateScrollService
   ){
 
+  }
+  ngOnInit(): void {
+    const tag2 = document.createElement('script');
+    tag2.append('AOS.init();')
+    document.body.appendChild(tag2);
   }
 
   drouter(link:string){

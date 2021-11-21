@@ -18,6 +18,7 @@
     color: white;
     font-size: x-large;
     text-align: start;
+    text-transform: uppercase;
 }
 
 .trade-cliente {
@@ -47,6 +48,7 @@
     color: white;
     font-size: x-large;
     text-align: end;
+    text-transform: uppercase;
 }
 
 .trade-cliente-right {
@@ -75,4 +77,13 @@
 .display-block {
     display: block;
     text-align: end;
+}
+
+.trade-link {
+    color: white;
+    width: 50%;
+}
+
+.mini-width {
+    width: 40% !important;
 }

@@ -1,4 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+    font-family: aquino-demo;
+    src: url("/assets/fonts/Aquino-Demo.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: lato-black;
+    src: url("/assets/fonts/Lato-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: montserrat-extra-bold;
+    src: url("/assets/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: myriad-pro-regular;
+    src: url("/assets/fonts/MyriadPro-Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: nexa-bold;
+    src: url("/assets/fonts/Nexa-Bold.otf") format("truetype");
+}
+
+@font-face {
+    font-family: nexa-light;
+    src: url("/assets/fonts/Nexa-Light.otf") format("truetype");
+}
