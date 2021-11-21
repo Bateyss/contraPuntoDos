@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgAnimateScrollService } from 'ng-animate-scroll';
+import { Utils } from '../utils';
 
 @Component({
   selector: 'app-web-desing',
@@ -7,6 +8,8 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
   styleUrls: ['./web-desing.component.css', './../../assets/fonts/fontsadded.css', './../multimedia/multimedia.component.css', './../inicio/inicio.component.css','./../branding/branding.component.css']
 })
 export class WebDesingComponent implements OnInit {
+
+  public fadeDuration:number = Utils.fadeInDuration;
 
   constructor(
     private animateScrollService: NgAnimateScrollService
@@ -18,6 +21,6 @@ export class WebDesingComponent implements OnInit {
     document.body.appendChild(tag2);
   }
   moveBotton(duration?: number) {
-    this.animateScrollService.scrollToElement('webDesingBottom', duration)
+    this.animateScrollService.scrollToElement('webDesingBottom', Utils.scrollerDuration)
   }
 }

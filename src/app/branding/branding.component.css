@@ -29,13 +29,13 @@
 
 .trade-cliente-name {
     color: white;
-    font-size: large;
+    font-size: x-large;
     text-align: start;
 }
 
 .trade-cliente-logotype {
     color: white;
-    font-size: small;
+    font-size: medium;
     text-align: start;
 }
 
@@ -59,13 +59,13 @@
 
 .trade-cliente-name-right {
     color: white;
-    font-size: large;
+    font-size: x-large;
     text-align: end;
 }
 
 .trade-cliente-logotype-right {
     color: white;
-    font-size: small;
+    font-size: medium;
     text-align: end;
 }
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NgAnimateScrollService } from 'ng-animate-scroll';
+import { Utils } from '../utils';
 
 @Component({
   selector: 'app-contacto',
@@ -9,6 +10,8 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
   styleUrls: ['./contacto.component.css', './../../assets/fonts/fontsadded.css', './../inicio/inicio.component.css']
 })
 export class ContactoComponent implements OnInit {
+
+  public fadeDuration:number = Utils.fadeInDuration;
 
   public contactoForm: FormGroup;
   constructor(
@@ -41,12 +44,12 @@ export class ContactoComponent implements OnInit {
 
   openSnackBar(message: string, action: string) {
     this._snackBar.open(message, action, {
-      duration: 2000,
+      duration: Utils.snackBarDutarion,
     });
   }
 
   moveBotton(duration?: number) {
-    this.animateScrollService.scrollToElement('contactoBottom', duration)
+    this.animateScrollService.scrollToElement('contactoBottom', Utils.scrollerDuration)
   }
 
   contactoF(control: string) { return this.contactoForm.get(control); }

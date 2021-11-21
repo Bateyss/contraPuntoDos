@@ -12,35 +12,36 @@ body {
 
 @font-face {
     font-family: aquino-demo;
-    src: url("/assets/fonts/Aquino-Demo.ttf") format("truetype");
+    src: url('https://fonts.cdnfonts.com/s/22955/Aquino-Demo.woff') format("woff");
 }
 
 @font-face {
     font-family: lato-black;
-    src: url("/assets/fonts/Lato-Black.ttf") format("truetype");
+    src: url('https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVSwaPGR_p.woff2') format('woff2');
 }
 
 @font-face {
     font-family: montserrat-extra-bold;
-    src: url("/assets/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+    src: url('https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2') format('woff2');
 }
 
 @font-face {
     font-family: montserrat-regular;
-    src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+    src: url('https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2') format('woff2');
 }
 
 @font-face {
     font-family: myriad-pro-regular;
-    src: url("/assets/fonts/MyriadPro-Regular.otf") format("truetype");
+    src: url('https://fonts.cdnfonts.com/s/492/MYRIADPRO-REGULAR.woff') format('woff');
 }
 
 @font-face {
     font-family: nexa-bold;
-    src: url("/assets/fonts/Nexa-Bold.otf") format("truetype");
+    src: url('https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoCjC3jsGyN.woff2') format('woff2');
 }
 
 @font-face {
     font-family: nexa-light;
-    src: url("/assets/fonts/Nexa-Light.otf") format("truetype");
+    font-style: normal;
+    src: url('https://fonts.cdnfonts.com/s/16221/NexaLight.woff') format('woff');
 }

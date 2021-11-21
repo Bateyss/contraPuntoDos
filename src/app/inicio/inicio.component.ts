@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { NgAnimateScrollService } from 'ng-animate-scroll';
+import { Utils } from '../utils';
 
 @Component({
   selector: 'app-inicio',
@@ -10,6 +11,8 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
   styleUrls: ['./inicio.component.css','./../../assets/fonts/fontsadded.css']
 })
 export class InicioComponent implements OnInit {
+
+  public fadeDuration:number = Utils.fadeInDuration;
 
   public contactoForm: FormGroup;
   private links = ['Inicio', 'Multimedia', 'Branding', 'Diseño Web', 'Contacto'];
@@ -59,7 +62,7 @@ export class InicioComponent implements OnInit {
 
   openSnackBar(message: string, action: string) {
     this._snackBar.open(message, action, {
-      duration: 2000,
+      duration: Utils.snackBarDutarion,
     });
   }
 } 

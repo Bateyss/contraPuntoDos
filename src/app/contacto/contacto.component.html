@@ -1,6 +1,6 @@
 <div class="card-contacto-3">
 
-    <div class="col-12" data-aos="fade-up" data-aos-duration="3000">
+    <div class="col-12" data-aos="fade-up" data-aos-duration="fadeDuration">
         <div class="row">
             <div class="col-1 plus-left no-padding ">
                 <img class="side-outsite-bottom plus-img" src="assets/images/cruces/cruzL3.png" alt="">
@@ -19,14 +19,14 @@
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-md-10" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="3000">
+                <div class="col-md-10" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
                     <img width="100%" src="assets/images/contacto/contacto.png" alt="">
                 </div>
             </div>
 
         </div>
     </div>
-    <div class="col-12" data-aos="fade-up" data-aos-duration="3000">
+    <div class="col-12" data-aos="fade-up" data-aos-duration="fadeDuration">
         <div class="row">
             <div class="col-1 plus-left no-padding ">
 
@@ -45,40 +45,40 @@
     <br />
     <div class="container">
         <div class="col-12">
-            <div class="row contacto-mail" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row contacto-mail" data-aos="fade-up" data-aos-duration="fadeDuration">
                 <img src="assets/images/contacto/mail.png" alt="">
             </div>
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <div class="row" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
                         <h1 class="card-title-text-2 montserrat-regular">Sera un gusto atenderte, escribe el servicio que necesitas y te respondere lo mas breve posible.</h1>
                     </div>
                     <form id="frmContacto" [formGroup]="contactoForm" (ngSubmit)="guardarMensaje()">
                         <div class="row">
                             <div class="col-6">
-                                <div class="row" data-aos="fade-up" data-aos-duration="4000">
+                                <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
                                     <mat-form-field class="text-cover-area bg-light">
                                         <mat-label>Nombre y Apellido:</mat-label>
                                         <input matInput formControlName="nombre" [ngClass]="{ 'is-invalid': contactoF('nombre')?.errors }" />
                                         <mat-error *ngIf="contactoF('nombre')?.errors">ingresa nombre</mat-error>
                                     </mat-form-field>
                                 </div>
-                                <div class="row" data-aos="fade-up" data-aos-duration="5000">
+                                <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
                                     <mat-form-field class="text-cover-area bg-light">
                                         <mat-label>E-mail:</mat-label>
                                         <input matInput formControlName="email" [ngClass]="{ 'is-invalid': contactoF('email')?.errors }" />
                                         <mat-error *ngIf="contactoF('email')?.errors">ingresa email valido</mat-error>
                                     </mat-form-field>
                                 </div>
-                                <div class="row" data-aos="fade-up" data-aos-duration="6000">
+                                <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
                                     <mat-form-field class="text-cover-area bg-light">
                                         <mat-label>Móvil:</mat-label>
                                         <input matInput formControlName="telefono" [ngClass]="{ 'is-invalid': contactoF('telefono')?.errors }" />
                                         <mat-error *ngIf="contactoF('telefono')?.errors">ingresa móvil valido</mat-error>
                                     </mat-form-field>
                                 </div>
-                                <div class="row" data-aos="fade-up" data-aos-duration="7000">
+                                <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
                                     <mat-form-field class="text-cover-area bg-light">
                                         <mat-label>País:</mat-label>
                                         <input matInput formControlName="pais" [ngClass]="{ 'is-invalid': contactoF('pais')?.errors }" />
@@ -86,7 +86,7 @@
                                     </mat-form-field>
                                 </div>
                             </div>
-                            <div class="col-6" data-aos="fade-up" data-aos-duration="8000">
+                            <div class="col-6" data-aos="fade-up" data-aos-duration="fadeDuration">
                                 <mat-form-field class="text-cover-area bg-light" [style.height]="'95%'">
                                     <mat-label>Mensaje:</mat-label>
                                     <textarea matInput [style.height]="'100%'" formControlName="mensaje" [ngClass]="{ 'is-invalid': contactoF('mensaje')?.errors }"></textarea>
@@ -95,7 +95,7 @@
                             </div>
                         </div>
                         <br />
-                        <div class="row" data-aos="fade-up" data-aos-duration="9000">
+                        <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
                             <button mat-raised-button class="form-control lato-black" color="accent">Enviar</button>
                         </div>
                     </form>
@@ -104,7 +104,7 @@
             </div>
         </div>
     </div>
-    <div id="contactoBottom" class="col-12" data-aos="fade-up" data-aos-duration="3000">
+    <div id="contactoBottom" class="col-12" data-aos="fade-up" data-aos-duration="fadeDuration">
         <div class="row">
             <div class="col-1 no-padding">
                 <img class="side-outsite-bottom plus-img" src="assets/images/cruces/cruzL1.png" alt="">

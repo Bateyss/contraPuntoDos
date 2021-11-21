@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgAnimateScrollService } from 'ng-animate-scroll';
+import { Utils } from '../utils';
 
 @Component({
   selector: 'app-multimedia',
@@ -7,6 +8,8 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
   styleUrls: ['./multimedia.component.css', './../inicio/inicio.component.css', './../../assets/fonts/fontsadded.css']
 })
 export class MultimediaComponent implements OnInit {
+
+  public fadeDuration:number = Utils.fadeInDuration;
 
   constructor(
     private animateScrollService: NgAnimateScrollService
@@ -22,7 +25,7 @@ export class MultimediaComponent implements OnInit {
   }
 
   moveBotton(duration?: number) {
-    this.animateScrollService.scrollToElement('multimediaBottom', duration)
+    this.animateScrollService.scrollToElement('multimediaBottom', Utils.scrollerDuration)
   }
 
 }

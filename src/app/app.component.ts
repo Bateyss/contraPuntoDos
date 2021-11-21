@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgAnimateScrollService } from 'ng-animate-scroll';
+import { Utils } from './utils';
 
 @Component({
   selector: 'app-root',
@@ -35,6 +36,6 @@ export class AppComponent implements OnInit {
   }
 
   moveUp(duration?: number) {
-    this.animateScrollService.scrollToElement('navbar-up', duration)
+    this.animateScrollService.scrollToElement('navbar-up', Utils.scrollerDuration)
   }
 }
