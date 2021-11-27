@@ -31,11 +31,13 @@
       <mat-tab label="Third"> Content 3 </mat-tab>
   </mat-tab-group> -->
     <nav mat-tab-nav-bar mat-align-tabs="end">
-
-        <span>
-          <img (click)="moveUp(1000)" [src]="'assets/images/cruces/flechaArriba.png'" class="nav-image-icon" />
-      </span>
-        <label class="volver-text nexa-bold">Volver <br /> Arriba</label>
+        <div>
+            <img (click)="moveUp(1000)" [src]="'assets/images/cruces/flechaArriba.png'" class="nav-image-icon" />
+        </div>
+        <div class="centered" (click)="moveUp(1000)">
+            <label class="volver-text nexa-bold">Volver</label><br>
+            <label class="volver-text nexa-bold">Arriba</label>
+        </div>
         <div class="navbar-spacer"></div>
         <lable class="text-light montserrat-regular tab-linke" mat-tab-link [style.opacity]="'1'" *ngFor="let link of links" (click)="drouter(link)" [active]="activeLink == link"> {{link}} </lable>
     </nav>
@@ -43,8 +45,8 @@
         <div class="row">
             <div class="col-9">
             </div>
-            <div class="col-3">
-                <img width="100%" src="assets/images/home/logoHome.png" alt="">
+            <div class="col-3" [style.textAlign]="'end'">
+                <img width="60%" src="assets/images/home/logoHome.png" alt="">
             </div>
         </div>
     </div>

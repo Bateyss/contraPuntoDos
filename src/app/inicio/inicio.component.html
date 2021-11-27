@@ -1,16 +1,27 @@
 <div class="card-octamedia">
+    <div class="row">
 
-    <div class="container">
-        <br />
-        <br />
-        <div class="col-md-12" data-aos="fade-up" data-aos-duration="fadeDuration">
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-5" data-aos="fade-up" data-aos-duration="fadeDuration"><img width="100%" src="assets/images/home/logoHome.png" alt="">
-                    <img width="50%" [style.marginTop]="'-10%'" src="assets/images/home/defHome.png" alt=""></div>
-                <div class="col-md-5" data-aos="fade-up" data-aos-duration="fadeDuration">
+                <div class="col-12 no-padding">
+                    <img class="  plus-img absulute-block" src="assets/images/cruces/cruzL3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-10" data-aos="fade-up" data-aos-duration="fadeDuration">
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-md-6" [style.marginTop]="'-5%'" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <img width="100%" src="assets/images/home/logoHome.png" alt="">
+                    <img width="50%" [style.marginTop]="'-10%'" src="assets/images/home/defHome.png" alt="">
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="fadeDuration">
                     <span [style.color]="'white'" class="myriad-pro-regular">
-                        <p><br /></p>
                         <p>Contrapunto proviene de un concepto digital que significa, 
                         dos melodías sonando al mismo tiempo. Traducido al area de diseño gráfico se refiere a 
                         poder controlar multiples disciplinas enfocadas en: Edición, fotografía y branding.
@@ -22,20 +33,22 @@
                        <p> Gracias por visitar este sitio web, espero que
                         disfrutes su contenido</p></span>
                 </div>
-                <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 centered" [style.alignSelf]="'center'">
+                    <img src="assets/images/cruces/flechaAbajo.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-12">
-        <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
-            <div class="col-1 plus-left no-padding ">
-                <img class=" side-outsite-bottom plus-img" src="assets/images/cruces/cruzL3.png" alt="">
-            </div>
-            <div class="col-10 centered" [style.alignSelf]="'center'">
-                <img src="assets/images/cruces/flechaAbajo.png" alt="" (click)="moveBotton(1000)">
-            </div>
-            <div class="col-1 plus-right no-padding ">
-                <img class="rotate side-outsite-bottom plus-img" src="assets/images/cruces/cruzL1.png" alt="">
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-12 no-padding ">
+                    <img class="rotate  plus-img absulute-block" src="assets/images/cruces/cruzL1.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -44,65 +57,82 @@
 <div class="card-proyectos">
     <br />
     <br />
-    <div class="container">
-        <div class="col-12">
+    <div class="row">
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+
+            </div>
+        </div>
+        <div class="col-10">
+
+
             <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
-                <div class="col-6" data-aos="fade-up" data-aos-duration="fadeDuration">
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="fadeDuration">
                     <img width="100%" src="assets/images/home/Proyectos/proyectos.png" alt="">
                 </div>
-                <div class="col-6 ">
-                    <div class="row" [style.width]="'100%'">
-                        <div [style.width]="'100%'" class="col-4 side-outsite-left-2" data-aos="fade-up" data-aos-duration="fadeDuration">
-                            <a [style.width]="'100%'" (click)="drouter('m')">
-                                <img width="200%" class="hovered" src="assets/images/home/Proyectos/multimediaRectangulo.png" alt="">
-                                <div class="text-absolute visible-effect nexa-bold upper">Multimedia</div>
+                <div class="col-md-6 " [style.display]="'grid'">
+                    <div class="row bipre" [style.width]="'100%'" data-aos="fade-up" data-aos-duration="fadeDuration">
+
+                        <a (click)="drouter('m')" class="img-multimedia hovered visible-effect nexa-bold upper ">
+                                Multimedia
+                            </a>
+                        <img class="select-categ-img" width="20%" src="assets/images/home/Proyectos/manoTouch.png" alt="">
+                        <label [style.color]="'white'" class="myriad-pro-regular select-categ">Seleciona una categoría</label>
+
+                    </div>
+                    <div class="row bipre" [style.width]="'100%'" data-aos="fade-up" data-aos-duration="fadeDuration">
+
+                        <a (click)="drouter('b')" class="img-branding hovered visible-effect nexa-bold upper">
+                                Branding
                             </a>
 
-                        </div>
-                        <div class="col-4 side-outsite-right-2" data-aos="fade-up" data-aos-duration="fadeDuration">
-                            <img width="90%" src="assets/images/home/Proyectos/manoTouch.png" alt="">
-                        </div>
-                        <div class="col-4 text-nat-center">
-                            <label [style.color]="'white'" class="myriad-pro-regular select-categ">Seleciona una categoría</label>
-                        </div>
                     </div>
-                    <div class="row" [style.width]="'60%'" data-aos="fade-up" data-aos-duration="fadeDuration">
-                        <div class="col-12">
-                            <a [style.width]="'100%'" (click)="drouter('b')">
-                                <img width="100%" class="side-outsite-left-2 hovered" src="assets/images/home/Proyectos/branding.png" alt="">
-                                <div class="text-absolute-1 visible-effect nexa-bold upper">Branding</div>
+                    <div class="row bipre" [style.width]="'100%'" data-aos="fade-up" data-aos-duration="fadeDuration">
+
+                        <a (click)="drouter('d')" class="img-webdesing hovered visible-effect nexa-bold upper">
+                                Diseño Web
                             </a>
-                        </div>
+
                     </div>
-                    <div class="row" [style.width]="'60%'" data-aos="fade-up" data-aos-duration="fadeDuration">
-                        <div class="col-12">
-                            <a [style.width]="'100%'" (click)="drouter('d')">
-                                <img width="100%" class="side-outsite-left-3 hovered" src="assets/images/home/Proyectos/disenioWeb.png" alt="">
-                                <div class="text-absolute-2 visible-effect nexa-bold upper">Diseño Web</div>
-                            </a>
-                        </div>
-                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-12 no-padding ">
+                    <img class="rotate  plus-img absulute-block" src="assets/images/cruces/cruzL1.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-12" data-aos="fade-up" data-aos-duration="fadeDuration">
-        <div class="row">
-            <div class="col-1">
-            </div>
-            <div class="col-10">
-            </div>
-            <div class="col-1 plus-right no-padding ">
-                <img class="side-outsite-bottom plus-img" src="assets/images/cruces/cruzR2.png" alt="">
-            </div>
-        </div>
-    </div>
+    <br />
+    <br />
 </div>
 <div class="card-colaboradores">
     <br />
     <br />
-    <div class="container">
-        <div class="col-12">
+    <div class="row">
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-12 no-padding ">
+                    <img class=" plus-img absulute-block" src="assets/images/cruces/cruzL1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-10">
             <div class="row">
                 <div class="col-12">
                     <h1 class="card-title-text nexa-bold" data-aos="fade-up" data-aos-duration="fadeDuration">Colaboradores</h1>
@@ -111,52 +141,60 @@
             <br />
             <br />
             <div class="row">
-                <div class="col-3" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <img width="90%" class="hovered" src="assets/images/home/Colaboradores/spabass.png" alt="">
+                <div class="col-3 centered" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <img width="55%" class="hovered" src="assets/images/home/Colaboradores/spabass.png" alt="">
                 </div>
-                <div class="col-3" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <img width="90%" class="hovered" src="assets/images/home/Colaboradores/amaretto.png" alt="">
+                <div class="col-3 centered" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <img width="55%" class="hovered" src="assets/images/home/Colaboradores/amaretto.png" alt="">
                 </div>
-                <div class="col-3" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <img width="90%" class="hovered" src="assets/images/home/Colaboradores/reflex.png" alt="">
+                <div class="col-3 centered" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <img width="110%" class="hovered" src="assets/images/home/Colaboradores/reflex.png" alt="">
                 </div>
-                <div class="col-3" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <img width="90%" class="hovered" src="assets/images/home/Colaboradores/albasan.png" alt="">
+                <div class="col-3 centered" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <img width="55%" class="hovered" src="assets/images/home/Colaboradores/albasan.png" alt="">
                 </div>
             </div>
             <div class="row">
                 <div class="col-1"></div>
-                <div class="col-3" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <img width="90%" class="hovered" src="assets/images/home/Colaboradores/nikoCactli.png" alt="">
+                <div class="col-3 centered" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <img width="55%" class="hovered" src="assets/images/home/Colaboradores/nikoCactli.png" alt="">
                 </div>
-                <div class="col-3" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <img width="90%" class="hovered" src="assets/images/home/Colaboradores/looper.png" alt="">
+                <div class="col-3 centered" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <img width="55%" class="hovered" src="assets/images/home/Colaboradores/looper.png" alt="">
                 </div>
-                <div class="col-3" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <img width="90%" class="hovered" src="assets/images/home/Colaboradores/tipsMarketing.png" alt="">
+                <div class="col-3 centered" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <img width="55%" class="hovered" src="assets/images/home/Colaboradores/tipsMarketing.png" alt="">
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-12">
-        <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
-            <div class="col-1 plus-left no-padding ">
-                <img class=" side-outsite-bottom plus-img" src="assets/images/cruces/cruzL1.png" alt="">
-            </div>
-            <div class="col-10 " [style.alignSelf]="'center'">
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
 
             </div>
-            <div class="col-1  ">
-            </div>
         </div>
     </div>
+    <br />
+    <br />
 </div>
 
 <div class="card-contacto">
     <br />
     <br />
-    <div class="container">
-        <div class="col-12">
+    <div class="row">
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+
+            </div>
+        </div>
+        <div class="col-10">
             <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
                 <h1 class="card-title-text nexa-bold">Contacto</h1>
             </div>
@@ -170,28 +208,28 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
-                                    <mat-form-field class="text-cover-area bg-light">
+                                    <mat-form-field class="text-cover-area bg-light montserrat-regular">
                                         <mat-label>Nombre y Apellido:</mat-label>
-                                        <input matInput formControlName="nombre" [ngClass]="{ 'is-invalid': contactoF('nombre')?.errors }" />
+                                        <textarea matInput formControlName="nombre" [ngClass]="{ 'is-invalid': contactoF('nombre')?.errors }" rows="3"></textarea>
                                         <mat-error *ngIf="contactoF('nombre')?.errors">ingresa nombre</mat-error>
                                     </mat-form-field>
                                 </div>
                                 <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
-                                    <mat-form-field class="text-cover-area bg-light">
+                                    <mat-form-field class="text-cover-area bg-light montserrat-regular">
                                         <mat-label>E-mail:</mat-label>
-                                        <input matInput formControlName="email" [ngClass]="{ 'is-invalid': contactoF('email')?.errors }" />
+                                        <textarea matInput formControlName="email" [ngClass]="{ 'is-invalid': contactoF('email')?.errors }" rows="5"></textarea>
                                         <mat-error *ngIf="contactoF('email')?.errors">ingresa email valido</mat-error>
                                     </mat-form-field>
                                 </div>
                                 <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
-                                    <mat-form-field class="text-cover-area bg-light">
+                                    <mat-form-field class="text-cover-area bg-light montserrat-regular">
                                         <mat-label>Móvil:</mat-label>
                                         <input matInput formControlName="telefono" [ngClass]="{ 'is-invalid': contactoF('telefono')?.errors }" />
                                         <mat-error *ngIf="contactoF('telefono')?.errors">ingresa móvil valido</mat-error>
                                     </mat-form-field>
                                 </div>
                                 <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
-                                    <mat-form-field class="text-cover-area bg-light">
+                                    <mat-form-field class="text-cover-area bg-light montserrat-regular">
                                         <mat-label>País:</mat-label>
                                         <input matInput formControlName="pais" [ngClass]="{ 'is-invalid': contactoF('pais')?.errors }" />
                                         <mat-error *ngIf="contactoF('pais')?.errors">ingresa país</mat-error>
@@ -199,9 +237,9 @@
                                 </div>
                             </div>
                             <div class="col-6" data-aos="fade-up" data-aos-duration="fadeDuration">
-                                <mat-form-field class="text-cover-area bg-light" [style.height]="'95%'">
+                                <mat-form-field class="text-cover-area bg-light montserrat-regular" [style.height]="'95%'">
                                     <mat-label>Mensaje:</mat-label>
-                                    <textarea matInput [style.height]="'100%'" formControlName="mensaje" [ngClass]="{ 'is-invalid': contactoF('mensaje')?.errors }"></textarea>
+                                    <textarea matInput [style.height]="'100%'" formControlName="mensaje" [ngClass]="{ 'is-invalid': contactoF('mensaje')?.errors }" rows="15"></textarea>
                                     <mat-error *ngIf="contactoF('mensaje')?.errors">ingresa mensaje</mat-error>
                                 </mat-form-field>
                             </div>
@@ -215,16 +253,19 @@
                 <div class="col-2"></div>
             </div>
         </div>
-    </div>
-    <div id="inicioBottom" class="col-12">
-        <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
-            <div class="col-1">
-            </div>
-            <div class="col-10">
-            </div>
-            <div class="col-1 plus-right no-padding ">
-                <img class="side-outsite-bottom plus-img" src="assets/images/cruces/cruzR4.png" alt="">
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-12 no-padding ">
+                    <img class=" plus-img absulute-block" src="assets/images/cruces/cruzR4.png" alt="">
+                </div>
             </div>
         </div>
     </div>
+    <br />
+    <br />
+    <div id="inicioBottom"></div>
 </div>

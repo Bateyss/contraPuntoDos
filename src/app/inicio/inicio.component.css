@@ -14,6 +14,11 @@
     background-image: url('/assets/images/home/fondos/coctacto.png');
 }
 
+.absulute-block {
+    position: absolute;
+    display: block;
+}
+
 .plus-right {
     display: block;
     position: inherit;
@@ -35,6 +40,7 @@
 .plus-img {
     color: aliceblue;
     width: 90%;
+    z-index: 1;
 }
 
 .no-padding {
@@ -44,10 +50,6 @@
 
 .centered {
     text-align: center;
-}
-
-.side-outsite-bottom {
-    margin-bottom: -100%;
 }
 
 .side-outsite-left-1 {
@@ -77,11 +79,12 @@
 }
 
 .hovered {
-    transition: transform 0.5s
+    transition: transform 0.5s;
 }
 
 .hovered:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
+    text-decoration: none;
 }
 
 .text-absolute {
@@ -110,7 +113,7 @@
 }
 
 .visible-effect {
-    opacity: 0.05;
+    opacity: 0.9;
     transition: opacity 0.5s linear;
 }
 
@@ -124,6 +127,7 @@
     text-align: center;
     font-size: 400%;
     text-transform: uppercase;
+    text-shadow: 1.2px 0 0 #00b8ff, -1.5px 0 #ff2aff;
 }
 
 .card-title-text-2 {
@@ -146,5 +150,158 @@
 }
 
 .select-categ {
-    font-size: x-large;
+    position: absolute;
+    font-size: large;
+    text-align: center;
+    align-self: center;
+    left: 45%;
+}
+
+.select-categ-img {
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    left: 25%;
+}
+
+.centered {
+    align-items: center;
+    align-self: center;
+}
+
+.img-multimedia {
+    background-image: url('/assets/images/home/Proyectos/multimediaRectangulo.png');
+    background-size: cover;
+    padding: 1.5em;
+    font-size: xxx-large;
+    height: 85%;
+    margin-left: -30%;
+    text-align: center;
+    background-position: center;
+    align-self: center;
+    border-radius: 2em;
+    color: #fff;
+}
+
+.img-branding {
+    background-image: url('/assets/images/home/Proyectos/branding.png');
+    background-size: cover;
+    padding: 1.5em;
+    padding-inline: 1.8em;
+    padding-right: 1.5em;
+    height: 85%;
+    font-size: xxx-large;
+    margin-left: -15%;
+    text-align: center;
+    background-position: center;
+    align-self: center;
+    border-radius: 2em;
+    color: #fff;
+}
+
+.img-webdesing {
+    background-image: url('/assets/images/home/Proyectos/disenioWeb.png');
+    background-size: cover;
+    padding: 1.5em;
+    height: 85%;
+    font-size: xxx-large;
+    margin-left: 0%;
+    text-align: center;
+    background-position: center;
+    align-self: center;
+    border-radius: 2em;
+    color: #fff;
+}
+
+.bipre {
+    color: #fff;
+}
+
+@media screen and (max-width: 1660px) {
+    .img-webdesing {
+        font-size: xx-large;
+    }
+    .img-multimedia {
+        font-size: xx-large;
+    }
+    .img-branding {
+        font-size: xx-large;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .img-webdesing {
+        font-size: x-large;
+    }
+    .img-multimedia {
+        font-size: x-large;
+    }
+    .img-branding {
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .img-webdesing {
+        font-size: large;
+    }
+    .img-multimedia {
+        font-size: large;
+    }
+    .img-branding {
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .select-categ-img {
+        display: none;
+        position: absolute;
+    }
+    .select-categ {
+        display: none;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .img-webdesing {
+        font-size: medium;
+    }
+    .img-multimedia {
+        font-size: medium;
+    }
+    .img-branding {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .img-multimedia {
+        margin-left: 0%;
+    }
+    .img-branding {
+        margin-left: 0%;
+    }
+    .bipre {
+        display: grid;
+    }
+    .img-webdesing {
+        font-size: xx-large;
+    }
+    .img-multimedia {
+        font-size: xx-large;
+    }
+    .img-branding {
+        font-size: xx-large;
+    }
+}
+
+.block {
+    display: block;
+    position: relative;
+}
+
+.lateral-grid {
+    display: grid;
 }

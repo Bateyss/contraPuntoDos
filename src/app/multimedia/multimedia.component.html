@@ -1,9 +1,20 @@
 <div class="card-multimedia">
+    <br />
+    <br />
+    <div class="row">
 
-    <div class="container">
-        <br />
-        <br />
-        <div class="col-md-12" data-aos="fade-up" data-aos-duration="fadeDuration">
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-12 no-padding ">
+                    <img class=" plus-img absulute-block" src="assets/images/cruces/cruzL3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-10" data-aos="fade-up" data-aos-duration="fadeDuration">
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-5" [style.alignSelf]="'center'" data-aos="fade-up" data-aos-duration="fadeDuration">
@@ -17,106 +28,123 @@
                     </div>
                     <div class="row">
                         <div class="col-12" [style.textAlign]="'center'">
-                            <label class="text-video myriad-pro-regular">Proyectos relacionados a
-                                creación de videos, producción
+                            <label class="text-video myriad-pro-regular" [style.textAlign]="'center'">Proyectos relacionados a <br>
+                                creación de videos, producción <br>
                                 y post producción y animación.</label>
                         </div>
                     </div>
 
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12 centered" [style.alignSelf]="'center'">
+                    <img src="assets/images/cruces/flechaAbajo.png" alt="">
+                </div>
+            </div>
 
         </div>
-    </div>
-    <div class="col-12">
-        <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
-            <div class="col-1 plus-left no-padding ">
-                <img class="side-outsite-bottom plus-img" src="assets/images/cruces/cruzL3.png" alt="">
-            </div>
-            <div class="col-10 centered" [style.alignSelf]="'center'">
-                <img src="assets/images/cruces/flechaAbajo.png" alt="" (click)="moveBotton(1000)">
-            </div>
-            <div class="col-1 plus-right no-padding ">
-                <img class="side-outsite-bottom plus-img" src="assets/images/cruces/cruzR1.png" alt="">
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-12 no-padding ">
+                    <img class=" plus-img absulute-block" src="assets/images/cruces/cruzR1.png" alt="">
+                </div>
             </div>
         </div>
     </div>
+    <br />
 </div>
 
 <div class="card-videos">
+    <br />
+    <br />
+    <div class="row">
 
-    <div class="container-fluid">
-        <br />
-        <br />
-        <div class="col-md-12">
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
             <div class="row">
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <youtube-player videoId="WsUIVaXlmV8" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0">
-                    </youtube-player>
-                    <label class="video-title-2 nexa-light"> Intro Lives</label>
-                    <a href="https://youtu.be/WsUIVaXlmV8" target="open" class="video-title nexa-bold">Franja VIP</a>
-                    <label class="video-info nexa-bold">Cliente <br> Amaretto Classic Rock</label>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <youtube-player videoId="OX49Uj4-K_o" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0">
-                    </youtube-player>
-                    <label class="video-title-2 nexa-light"></label>
-                    <a href="https://youtu.be/OX49Uj4-K_o" target="open" class="video-title nexa-bold">Perseverancia en el arte</a>
-                    <label class="video-info nexa-bold">Proyecto <br> personal</label>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <youtube-player videoId="Y86NeyIPIPY" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0">
-                    </youtube-player>
-                    <label class="video-title-2 nexa-light"> music video</label>
-                    <a href="https://youtu.be/Y86NeyIPIPY" target="open" class="video-title nexa-bold">September</a>
-                    <label class="video-info nexa-bold">Cliente <br> Looper Rock Band</label>
+                <div class="col-12 no-padding ">
+                    <img class=" plus-img absulute-block" src="assets/images/cruces/cruz1.png" alt="">
                 </div>
             </div>
+        </div>
+        <div class="col-10">
             <div class="row">
                 <div class="col-md-4" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <youtube-player videoId="jOmg9WusnJQ" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0">
+                    <youtube-player videoId="WsUIVaXlmV8" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0" (stateChange)="videoPlayerStateChange($event,'1')">
                     </youtube-player>
-                    <label class="video-title-2 nexa-light"> music video</label>
-                    <a href="https://youtu.be/jOmg9WusnJQ" target="open" class="video-title nexa-bold">Africa</a>
-                    <label class="video-info nexa-bold">Cliente <br> Amaretto Classic Rock</label>
+                    <label id="videoSubTitle1" class="video-title-2 nexa-light"> Intro Lives</label>
+                    <a id="videoTitle1" href="https://youtu.be/WsUIVaXlmV8" target="open" class="video-title nexa-bold">Franja VIP</a>
+                    <label id="videoInfo1" class="video-info nexa-bold">Cliente <br> Amaretto Classic Rock</label>
                 </div>
-                <div class="col-md-8" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <youtube-player videoId="O-N_jd5BPT8" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <youtube-player videoId="OX49Uj4-K_o" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0" (stateChange)="videoPlayerStateChange($event,'2')">
                     </youtube-player>
-                    <label class="video-title-2 nexa-light">Animación</label>
-                    <a href="https://youtu.be/O-N_jd5BPT8" target="open" class="video-title nexa-bold">Plan de proyectos</a>
-                    <label class="video-info nexa-bold">Cliente <br> Embajada Japón</label>
+                    <label id="videoSubTitle2" class="video-title-2 nexa-light"></label>
+                    <a id="videoTitle2" href="https://youtu.be/OX49Uj4-K_o" target="open" class="video-title nexa-bold">Perseverancia en el arte</a>
+                    <label id="videoInfo2" class="video-info nexa-bold">Proyecto <br> personal</label>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <youtube-player videoId="Y86NeyIPIPY" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0" (stateChange)="videoPlayerStateChange($event,'3')">
+                    </youtube-player>
+                    <label id="videoSubTitle3" class="video-title-2 nexa-light"> music video</label>
+                    <a id="videoTitle3" href="https://youtu.be/Y86NeyIPIPY" target="open" class="video-title nexa-bold">September</a>
+                    <label id="videoInfo3" class="video-info nexa-bold">Cliente <br> Looper Rock Band</label>
                 </div>
             </div>
+            <br />
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <youtube-player videoId="jOmg9WusnJQ" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0" (stateChange)="videoPlayerStateChange($event,'4')">
+                    </youtube-player>
+                    <label id="videoSubTitle4" class="video-title-2 nexa-light"> music video</label>
+                    <a id="videoTitle4" href="https://youtu.be/jOmg9WusnJQ" target="open" class="video-title nexa-bold">Africa</a>
+                    <label id="videoInfo4" class="video-info nexa-bold">Cliente <br> Amaretto Classic Rock</label>
+                </div>
+                <div class="col-md-8" data-aos="fade-up" data-aos-duration="fadeDuration">
+                    <youtube-player videoId="O-N_jd5BPT8" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0" (stateChange)="videoPlayerStateChange($event,'5')">
+                    </youtube-player>
+                    <label id="videoSubTitle5" class="video-title-2 nexa-light">Animación</label>
+                    <a id="videoTitle5" href="https://youtu.be/O-N_jd5BPT8" target="open" class="video-title nexa-bold">Plan de proyectos</a>
+                    <label id="videoInfo5" class="video-info nexa-bold">Cliente <br> Embajada Japón</label>
+                </div>
+            </div>
+            <br />
             <div class="row">
                 <div class="col-md-8" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <youtube-player videoId="uZkawzPlOPM" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0">
+                    <youtube-player videoId="uZkawzPlOPM" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0" (stateChange)="videoPlayerStateChange($event,'6')">
                     </youtube-player>
-                    <label class="video-title-2 nexa-light">Edición para tv</label>
-                    <a href="https://youtu.be/uZkawzPlOPM" target="open" class="video-title nexa-bold">Evo TV</a>
-                    <label class="video-info nexa-bold">Proyecto personal</label>
+                    <label id="videoSubTitle6" class="video-title-2 nexa-light">Edición para tv</label>
+                    <a id="videoTitle6" href="https://youtu.be/uZkawzPlOPM" target="open" class="video-title nexa-bold">Evo TV</a>
+                    <label id="videoInfo6" class="video-info nexa-bold">Proyecto personal</label>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-duration="fadeDuration">
-                    <youtube-player videoId="i6wNCw7rkEc" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="4">
+                    <youtube-player videoId="i6wNCw7rkEc" rel="false" modestbranding="true" suggestedQuality="highres" [startSeconds]="0" (stateChange)="videoPlayerStateChange($event,'7')">
                     </youtube-player>
-                    <label class="video-title-2 nexa-light"></label>
-                    <a href="https://youtu.be/i6wNCw7rkEc" target="open" class="video-title nexa-bold">AMANECER ILAMATEPEC</a>
-                    <label class="video-info nexa-bold">Proyecto personal</label>
+                    <label id="videoSubTitle7" class="video-title-2 nexa-light"></label>
+                    <a id="videoTitle7" href="https://youtu.be/i6wNCw7rkEc" target="open" class="video-title nexa-bold">AMANECER ILAMATEPEC</a>
+                    <label id="videoInfo7" class="video-info nexa-bold">Proyecto personal</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-1 lateral-grid">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-12 no-padding ">
+                    <img class=" plus-img absulute-block" src="assets/images/cruces/cruzR1.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div id="multimediaBottom" class="col-12">
-        <div class="row" data-aos="fade-up" data-aos-duration="fadeDuration">
-            <div class="col-1 plus-left no-padding ">
-                <img [style.marginLeft]="'-50%'" class="side-outsite-bottom plus-img" src="assets/images/cruces/cruz1.png" alt="">
-            </div>
-            <div class="col-10 centered" [style.alignSelf]="'center'">
-                <img src="assets/images/home/cruces/flechaAbajo.png" alt="" (click)="moveBotton(1000)">
-            </div>
-            <div class="col-1 plus-right no-padding ">
-                <img class="side-outsite-bottom plus-img" src="assets/images/cruces/cruzR1.png" alt="">
-            </div>
-        </div>
-    </div>
+    <br />
+    <br />
 </div>
